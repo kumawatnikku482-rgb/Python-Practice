@@ -1,0 +1,29 @@
+# Project: Online Exam Result System
+#
+# Problem:
+# Create a Python program to check student marks
+# and display the result.
+#
+# Rules:
+# 1. Marks below 0 or above 100 = Invalid.
+# 2. Marks >= 75 = Distinction.
+# 3. Marks >= 33 = Regular Pass.
+# 4. Marks below 33 = Fail.
+#
+# Concepts: If-Else, Nested If-Else, Logical OR.
+
+
+
+marks = int(input("Enter marks: "))
+
+if marks < 0 or marks > 100:
+    print("Invalid")
+
+else:
+    if marks >= 33:
+        if marks >= 75:
+            print("Distinction")
+        else:
+            print("Regular Pass")
+    else:
+        print("Fail")
